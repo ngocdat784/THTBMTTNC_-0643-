@@ -1,4 +1,6 @@
 from cipher.caesar import ALPHABET
+from PyQt5 import QtCore, QtGui, QtWidgets
+
 
 class CaesarCipher:
     def __init__(self):
