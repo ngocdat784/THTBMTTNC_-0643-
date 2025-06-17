@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thực hành An toàn thông tin nâng cao</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(to right, #f0f8ff, #e6f0ff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .header-img {
+      height: 80px;
+      margin: 0 10px;
+    }
+
+    h3, p {
+      text-shadow: 1px 1px 2px #999;
+    }
+
+    .btn-cipher {
+      margin: 10px;
+      width: 250px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .cipher-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .container {
+      padding-bottom: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container text-center mt-4">
+    <!-- Logo -->
+    <div>
+      <img 
+        src="https://file1.hutech.edu.vn/file/editor/homepage/stories/hinh34/logo%20CMYK-01.png" 
+        alt="Logo HUTECH" 
+        class="header-img"
+      />
+      <img 
+        src="https://file1.hutech.edu.vn/file/editor/homepage1/449223-imgpsh_fullsize_anim-6.jpg" 
+        alt="Logo HUTECH 30 Năm" 
+        class="header-img"
+      />
+    </div>
+
+    <!-- Tiêu đề -->
+    <h3 class="mt-4 text-danger font-weight-bold">
+      BÀI THỰC HÀNH KẾT THÚC MÔN HỌC : THBMTTNC
+    </h3>
+    <p class="font-weight-bold text-dark" style="font-size: 18px;">
+      Trần Ngọc Đạt - 2280600643 GG !
+    </p>
+
+    <!-- Nút các thuật toán -->
+    <div class="cipher-buttons mt-4">
+      <button class="btn btn-primary btn-cipher" onclick="window.location.href='/caesar'">🔐 Caesar Cipher</button>
+      <button class="btn btn-secondary btn-cipher" onclick="window.location.href='/vigenere'">🧬 Vigenere Cipher</button>
+      <button class="btn btn-success btn-cipher" onclick="window.location.href='/railfence'">🪜 RailFence Cipher</button>
+      <button class="btn btn-warning btn-cipher" onclick="window.location.href='/playfair'">🧩 PlayFair Cipher</button>
+    </div>
+  </div>
+
+  <!-- Chatbot giữ nguyên -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="AI"
+    agent-id="a69a7aaa-d871-421b-82b7-25f90edd0a8f"
+    language-code="vi">
+  </df-messenger>
+</body>
+</html>
+
